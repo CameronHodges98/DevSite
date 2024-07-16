@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./Feedback/functions.js" defer></script>
+</head>
+<body class="contactInfo">
+    <header class="nav">
+        <h1>Cam.Dev</h1>
+        <div class="navi">
+            <div class="nav1">
+                <a href="./index.html">About Me</a>
+                <a href="./resume.html">Resume</a>
+            </div>
+            <div class="nav2">
+                <a href="./portfolio.html">Portfolio</a>
+                <a href="./contact.html">Feedback</a>
+            </div>
+        </div>
+    </header>
+    <section class="feedback">
+        <section class="form">
+            <h3>Thank you for your interest. <br> For any feedback on your experience with the website, complete the form below.</h3>
+            <form class="feedbackForm" id="feedbackForm" action="./thanks.html" onsubmit="handleFormSubmit(event)">
+                <div class="company">
+                    <label for="companyName">Company Name</label>
+                    <input type="text" id="companyName" name="companyName" required>
+                </div>
+                <div class="comment">
+                    <label for="comments">Comments/Feedback</label>
+                    <textarea id="comments" name="comments" placeholder="Enter Comments and Feedback Here." required></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit" id="submitButton">Submit</button>
+                </div>
+            </form>
+        </section>
+    </section>    
+    <section class="contact">
+        <h3>Contact Information</h3>
+        <p>Email: chodges98@gmail.com</p>
+        <p>Phone: (480) 298-2403</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cam.Dev. All rights reserved.</p>
+    </footer>
+</body>
+</html>

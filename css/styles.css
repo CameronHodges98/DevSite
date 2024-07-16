@@ -1,0 +1,399 @@
+/*Universal styling*/
+*{
+    margin: 0;
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+header {
+    background-color: black;
+    color: rgb(232, 243, 250);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 3.5px solid darkblue;
+    border-radius: 0 0 15px 15px;
+}
+h1 a{
+    border-bottom: 1.5px solid darkblue;
+    border-radius: 15px;
+    padding: 0 10px 0 10px;
+    margin: 5px 0 10px 0;
+    font-size: x-large;
+}
+body {
+    background-color: rgb(232, 243, 250);
+    font-family: Garamond, serif;
+    overflow: visible;
+}
+header .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.nav div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navi div {
+    display: flex;
+    flex-direction: column;
+}
+a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 3px;
+    line-height: 30px;
+    font-size: medium;
+    padding: 5px 10px;
+}
+a:hover {
+    color: rgb(69, 255, 69);
+    cursor: pointer;
+}
+a:active {
+    color: darkblue;
+}
+
+/*Home Page*/
+
+.about,
+.about section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 25px 25px 25px;
+}
+
+.about section a {
+    color: darkblue;
+    text-decoration: underline darkblue;
+}
+
+.about section a:hover {
+    color: rgb(69, 255, 69);
+    cursor: pointer;
+    border: 1px black solid;
+    border-radius: 25px;
+    background-color: darkblue;
+}
+
+.about p {
+    line-height: 40px;
+    text-align: center;
+    margin: 60px 0 40px 0;
+    width: 90%;
+    font-size: 18px;
+}
+
+.about img {
+    margin-top: 40px;
+    min-width: 200px;
+    max-width: 600px;
+    min-height: 200px;
+    max-height: 600px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.about label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 4px;
+    color: black;
+    width: 60%;
+    height: 30px;
+    font-size: 24px;
+    margin: 25px 0 0 0;
+    border-bottom: 2px solid darkblue;
+    border-radius: 0 0 10px 10px;
+}
+
+/*Resume Page*/
+.resumehead {
+    text-align: center;
+    margin: 20px;
+}
+.resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid darkblue;
+}
+.resume h2.name,
+.resume h3.contact,
+.resume h4.links,
+.download {
+    text-align: center;
+}
+.resume h4.links,
+.download {
+    font-size: 16px;
+}
+.resume a,
+.download a {
+    text-decoration: none;
+    letter-spacing: -1px;
+    color: blue
+}
+.resume a:hover,
+.download a:hover {
+    color: rgb(69, 255, 69);
+}
+.resume a:active,
+.download a:active {
+    color: black;
+}
+.resume .contents h2 {
+    margin-bottom: 10px;
+    border-bottom: 1px solid darkblue;
+}
+.resume .contents section {
+    margin: 45px 0;
+}
+.summary p {
+    text-indent: 20px;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+.education p {
+    line-height: 20px;
+}
+
+span{
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+}
+.education div {
+    margin: 20px 0 20px 0;
+}
+.certifications div {
+    margin: 20px 0 20px 0;
+}
+.skills div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.skills div li {
+    list-style-type: none;
+}
+h4 {
+    font-size: 17px;
+}
+
+/*Portfolio page*/
+.projects section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0;
+}
+.projects label {
+    font-size: x-large;
+    margin: 30px;
+}
+.link {
+    border: 1px solid black;
+    height: 400px;
+    width: 300px;
+}
+.projects section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects img {
+    border-radius: 25px;
+}
+.projects img:hover {
+    border: 3px solid darkblue;
+    box-shadow: 0 5px;
+}
+.projects img:active {
+    border: 0px solid darkblue;
+    box-shadow: 0 -5px;
+}
+
+/*Feedback/contact page*/ 
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.form h3 {
+    font-size: x-large;
+    margin: 30px;
+}
+.feedbackForm div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+}
+button {
+    background-color: rgb(69, 255, 69);
+    color: darkblue;
+    border: 1px solid darkblue;
+    margin: 10px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+button:hover {
+    background-color: darkblue;
+    color: rgb(69, 255, 69);
+    border: 1px solid rgb(69, 255, 69);
+    box-shadow: 0 4px;
+}
+button:active {
+    box-shadow: -4px 0;
+}
+.feedback input {
+    width: 50%;
+    height: 25px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid darkblue;
+    text-align: center;
+}
+.comment textarea {
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid darkblue;
+    width: 75%;
+    height: 150px;
+}
+.feedback label {
+    padding: 5px 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: 1.2px underline darkblue;
+}
+.contact {
+    margin-bottom: 25px;
+}
+.contact h3 {
+    margin: 25px 5px 15px 5px;
+    text-align: center;
+}
+.contact p {
+    text-align: center;
+    color: black;
+}
+
+/*feedback.html*/
+.compFeedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.compFeed {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: 75%;
+}
+
+/*Thank you page*/
+.thankyou {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 250px;
+    text-align: center;
+}
+.thankyou h1 {
+    margin: 30px;
+    font-size: 35px;
+}
+.thankyou h3 {
+    margin: 30px;
+    font-size: 20px;
+}
+
+/*Media Queries*/
+
+/*Desktop*/
+@media (min-width: 1300px) {
+    header {
+        flex-direction: row;
+        height: auto;
+        align-items: center;
+    }
+    .nav div {
+        flex-direction: row;
+    }
+    .about {
+        margin: 30px 0 150px 0;
+    }
+    .about section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 25px;
+    }
+    .about img {
+        width: 500px;
+        height: 500px;
+        margin: 60px 0 40px 0;
+    }
+    .about p {
+        width: 50%;
+        line-height: 50px;
+        padding: 0 0 50px 0;
+    }
+    .about label {
+        width: 20%;
+        margin: 40px;
+    }
+    .nav div {
+        flex-direction: row;
+    }
+    .feedback input {
+        width: 30%;
+    }
+    .projects section {
+        flex-direction: row;
+    }
+    .resume {
+        width: 55%;
+    }
+}
+
+/*Tablet*/
+@media (min-width:700px) and (max-width: 1280px) {
+    .nav {
+        flex-direction: row;
+    }
+    header {
+        flex-direction: row;
+        height: auto;
+        align-items: center;
+    }
+    .resume {
+        width: 70%;
+    }
+}
