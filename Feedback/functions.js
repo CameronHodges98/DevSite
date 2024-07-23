@@ -11,10 +11,3 @@ class Feedback {
         compFeedback.push(`${this._company}: ${this._feedback}`);
     }
 }
-
-let newCompany1 = new Feedback('Ferguson', 'Great work')
-newCompany1.saveCompany();
-console.log(compFeedback)
-let newCompany2 = new Feedback('Action', 'Great work')
-newCompany2.saveCompany();
-console.log(compFeedback)
