@@ -19,5 +19,4 @@ function handleSubmit() {
     const company = new Feedback(companyName, feedback);
     company.saveCompany;
     console.log(compFeedback);
-
 }
