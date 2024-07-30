@@ -11,3 +11,13 @@ class Feedback {
         compFeedback.push(`${this._company}: ${this._feedback}`);
     }
 }
+
+const companyName = document.getElementById('companyName').value;
+const feedback = document.getElementById('comments').value;
+
+function handleSubmit() {
+    const company = new Feedback(companyName, feedback);
+    company.saveCompany;
+    console.log(compFeedback);
+
+}
