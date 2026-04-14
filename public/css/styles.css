@@ -457,7 +457,7 @@ a:hover {
 .hero-image-frame {
   position: relative;
   width: 320px;
-  height: 320px;
+  height: 400px;
 }
 
 .hero-image-frame::before {
@@ -474,7 +474,6 @@ a:hover {
   position: absolute;
   inset: 0;
   border-radius: var(--radius-lg);
-  background: linear-gradient(135deg, rgba(88,166,255,0.2), rgba(163,113,247,0.2));
   z-index: 2;
   pointer-events: none;
 }
