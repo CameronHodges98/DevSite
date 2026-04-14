@@ -619,6 +619,11 @@ a:hover {
   color: var(--color-purple);
   border-color: rgba(163,113,247,0.2);
 }
+.tag.orange {
+  background: rgba(255, 168, 82, 0.1);
+  color: var(--color-orange);
+  border-color: rgba(255, 168, 82, 0.2);
+}
 
 /* =============================================
    Portfolio Page
