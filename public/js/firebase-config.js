@@ -3,12 +3,12 @@ import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.0/firebas
 
 // Get these values from Firebase Console → Project Settings → Your apps → Web app config
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
+  apiKey: "AIzaSyDeEBHLXJ2YLSkeU8W-cPh7KnFKjBoZ4q0",
   authDomain: "camdevsite.firebaseapp.com",
   projectId: "camdevsite",
-  storageBucket: "camdevsite.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  storageBucket: "camdevsite.firebasestorage.app",
+  messagingSenderId: "977617478668",
+  appId: "1:977617478668:web:6784cc787e7947c4dd3a29"
 };
 
 const app = initializeApp(firebaseConfig);

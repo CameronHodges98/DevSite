@@ -25,7 +25,7 @@ async function handleSubmit(e) {
       <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
       Send Message
     `;
-    alert('Something went wrong. Please try again or email me directly at chodges98@gmail.com');
+    alert('Something went wrong. Please try again or email me directly at cameronhodgesit@gmail.com');
   }
 }
 
