@@ -3,32 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Message Generator</title>
-  <link rel="stylesheet" href="quoteStyles.css">
+  <title>Quote Generator | Cam.Dev</title>
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
-<header class="nav">
-    <h1>Cam.Dev</h1>
-    <div class="navi">
-        <div>
-            <a href="../index.html">About Me</a>
-            <a href="../resume.html">Resume</a>
-        </div>
-        <div>
-            <a href="../portfolio.html">Portfolio</a>
-            <a href="../contact.html">Feedback</a> 
-        </div>
+<body class="quote-page-body">
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <a href="../index.html" class="nav-brand">Cam<span class="accent">.</span>Dev</a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="../index.html" class="nav-link">About</a>
+      <a href="../resume.html" class="nav-link">Resume</a>
+      <a href="../portfolio.html" class="nav-link">Portfolio</a>
+      <a href="../contact.html" class="nav-link">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Nav -->
+  <nav class="nav-mobile" id="navMobile" aria-label="Mobile navigation">
+    <a href="../index.html" class="nav-link">About</a>
+    <a href="../resume.html" class="nav-link">Resume</a>
+    <a href="../portfolio.html" class="nav-link">Portfolio</a>
+    <a href="../contact.html" class="nav-link">Contact</a>
+  </nav>
+
+  <main>
+    <div class="quote-hero reveal">
+      <span class="section-tag">// portfolio project</span>
+      <h1>Motivation Quote Generator</h1>
+      <p>A daily dose of inspiration — click the button to get started.</p>
     </div>
-</header>
-<body>
-    <section class="head">
-        <h1>Motivational Quote Program</h1>
-        <p>Daily dose of Motivation!!</p>
-    </section>
-    <section class="quoteBox">
-        <p class="quote"></p>
-        <button id="generateButton">Generate Quote</button>
-        <button id="deleteButton">Clear Quote</button>
-        <script src="quoteScript.js"></script>
-    </section>
+
+    <div class="quote-box reveal reveal-delay-1">
+      <div class="quote-display" id="quoteDisplay">
+        <em style="color: var(--color-text-subtle);">Hit "Generate" for your quote...</em>
+      </div>
+      <div class="quote-controls">
+        <button class="btn btn-primary" id="generateButton">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+          Generate Quote
+        </button>
+        <button class="btn btn-outline" id="deleteButton">
+          Clear
+        </button>
+      </div>
+      <a href="../portfolio.html" class="btn btn-outline btn-sm" style="margin-top: var(--space-4);">
+        ← Back to Portfolio
+      </a>
+    </div>
+  </main>
+
+  <script src="quoteScript.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 </html>

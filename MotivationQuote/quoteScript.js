@@ -38,20 +38,18 @@ function generateMessage() {
 
 function showMessage() {
   const message = generateMessage();
-  const quoteElement = document.querySelector('.quote');
+  const quoteElement = document.querySelector('.quote-display');
   if (quoteElement) {
-    quoteElement.style.backgroundColor = 'white';
     quoteElement.innerHTML = message;
-    quoteElement.style.border = '10px solid #333';
+    quoteElement.classList.add('has-quote');
   }
 }
 
 function clearMessage() {
-  const quoteElement = document.querySelector('.quote');
+  const quoteElement = document.querySelector('.quote-display');
   if (quoteElement) {
-    quoteElement.innerHTML = '';
-    quoteElement.style.backgroundColor = 'black';
-    quoteElement.style.border = 'none';
+    quoteElement.innerHTML = '<em style="color: var(--color-text-subtle);">Hit &ldquo;Generate&rdquo; for your quote...</em>';
+    quoteElement.classList.remove('has-quote');
   }
 }
 
